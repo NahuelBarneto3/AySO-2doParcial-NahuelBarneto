@@ -1,0 +1,254 @@
+ 1  $HOME
+    2  pwd
+    3  cd ..
+    4  mkdir 2doParcial
+    5  sudo mkdir 2doParcial
+    6  cd 2doParcial/
+    7  touch puntoa.sh
+    8  sudo touch puntoa.sh
+    9  sudo touch puntob.sh
+   10  sudo touch puntoc.sh
+   11  tree
+   12  apt install tree
+   13  sudo apt install tree
+   14  tree
+   15  sudo snap install tree
+   16  tree
+   17  sudo tree
+   18  lsblk
+   19  sudo apt list --installed |grep lvm
+   20  lsblk
+   21  sudo fdisk/dev/sdc
+   22  sudo fdisk /dev/sdc
+   23  lsblk
+   24  pwd
+   25  dc ..
+   26  cd ..
+   27  cd 2doParcial/
+   28  vim puntoa.sh
+   29  cd ..
+   30  sudo chmod +w 2doParcial/
+   31  cd 2doParcial/
+   32  vim puntoa.sh
+   33  sudo chmod +w puntoa.sh
+   34  vim puntoa.sh
+   35  ls -l puntoa.sh
+   36  ls -l puntob.sh
+   37  sudo vim puntoa.sg
+   38  sudo vim puntoa.sh
+   39  cat puntoa.sh
+   40  tree
+   41  sudo tree
+   42  sudo fdisk /dev/sdc
+   43  lsblk
+   44  sudo vim puntoa.sh
+   45  pwd
+   46  cd ..
+   47  cd 2doParcial/
+   48  sudo vim puntoa.sh
+   49  cat puntoa.sh
+   50  vim puntoa.sh
+   51  sudo vim puntoa.sh
+   52  kill 1846
+   53  sudo kill 1846
+   54  sudo vim puntoa.sh
+   55  htop
+   56  sudo vim puntoa.sh
+   57  rm -rf puntoa.sh
+   58  sudo rm -rf puntoa.sh
+   59  touch puntoa.sh
+   60  sudo touch puntoa.sh
+   61  sudo vim puntoa.sh
+   62  sudo kill 1846
+   63  ps -p 1846
+   64  sudo reboot
+   65  cd ..
+   66  cd 2doParcial/
+   67  vim puntoa.sh
+   68  tree
+   69  sudo tree
+   70  vim puntoa.sh
+   71  sudo vim puntoa.sh
+   72  vim -r puntoa.sh
+   73  sudo vim -r puntoa.sh
+   74  vim puntoa.sh
+   75  sudo vim puntoa.sh
+   76  sudo rm /home/2doParcial/.puntoa.sh.swp
+   77  sudo vim puntoa.sh
+   78  cat puntoa.sh
+   79  sudo fdisk /dev/sdc
+   80  sudo vim puntoa.sh
+   81  cat puntoa.sh
+   82  sudo mkswap /dev/sdc1
+   83  sudo swapon /dev/sdc1
+   84  free -h
+   85  sudo vim puntoa.sh
+   86  cat puntoa.sh
+   87  bash puntoa.sh
+   88  sudo fdisk /dev/sdc
+   89* sudo pvcreate /dev/sdc
+   90  sudo vim puntoa.sh
+   91  sudo pvcreate /dev/sdc3 /dev/sdc5 /dev/sdc6
+   92  sudo pvs
+   93  sudo vgcreate vgAdmin /dev/sdc2 /dev/sdc3
+   94  sudo pvs
+   95  sudo vgcreate vgDevelopers /dev/sdc5 /dev/sdc6
+   96  sudo vim puntoa.sh
+   97  cat puntoa.sh
+   98  sudo pvs
+   99  sudo lvcreate -L 1G vgDevelopers -n lvDevelopers
+  100  sudo lvcreate -L 1G vgDevelopers -n lvTesters
+  101  sudo lvcreate -L .9G vgDevelopers -n lvDevops
+  102  sudo lvcreate -L .8G vgDevelopers -n lvDevops
+  103  sudo lvcreate -L 2G vgAdmin -n lvAdmin
+  104  sudo lvcreate -L 1.6G vgAdmin -n lvAdmin
+  105  sudo lvs
+  106  sudo vim puntoa.sh
+  107  sudo mkfs.ext4 /dev/mapper/vgDevelopers-lvDevelopers
+  108  sudo mkfs.ext4 /dev/mapper/vgDevelopers-lvTesters
+  109  sudo mkfs.ext4 /dev/mapper/vgDevelopers-lvDevops
+  110  sudo mkfs.ext4 /dev/mapper/vgAdmin-lvAdmin
+  111  sudo lsblk -f
+  112  sudo vim puntoa.sh
+  113  cat puntoa.sh
+  114  sudo mkdir /mnt/lvDevelopers
+  115  sudo mkdir /mnt/lvTesters
+  116  sudo mkdir /mnt/lvDevops
+  117  sudo mkdir /mnt/lvAdmin
+  118  sudo mount /dev/mapper/vgDevelopers-lvDevelopers /mnt/lvDevelopers
+  119  sudo mount /dev/mapper/vgDevelopers-lvTesters /mnt/lvTesters
+  120  sudo mount /dev/mapper/vgDevelopers-lvDevops /mnt/lvDevops
+  121  sudo mount /dev/mapper/vgAdmin-lvAdmin /mnt/lvAdmin
+  122  df -h
+  123  lsblk -f
+  124  history
+  #sin querer sali y perdi el historial del medio
+     76  docker login -u nahuelbarneto
+   77  apt list --installed |grep docker
+   78  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker; containerd runc; do sudo apt-get remove $pkg; done
+   79  for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
+   80  # Add Docker's official GPG key:
+   81  sudo apt-get update
+   82  sudo apt-get install ca-certificates curl
+   83  sudo install -m 0755 -d /etc/apt/keyrings
+   84  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   85  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   86  # Add the repository to Apt sources:
+   87  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
+  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" |   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   88  sudo apt-get update
+   89  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   90  sudo docker run hello-world
+   91  docker login -u nahuelbarneto
+   92  history
+   92  history
+   93  docker build -t nahuelbarneto/2parcial-ayso:v1.0 .
+   94  sudo usermod -a -G docker vagrant
+      99  cd ..
+  100  touch dockerfile
+  101  sudo touch dockerfile
+  102  echo "FROM nginx
+COPY appHomeBanking /usr/share/nginx/html" >> dockerfile
+  103  sudo echo "FROM nginx
+COPY appHomeBanking /usr/share/nginx/html" >> dockerfile
+  104  sudo echo "FROM nginx
+COPY appHomeBanking /usr/share/nginx/html" > dockerfile
+  105  vim dockerfile
+  106  sudo vim dockerfile
+  107  cat dockerfile
+  108  sudo vim dockerfile
+  109  cat dockerfile
+  110  ll
+  111  docker push nahuelbarneto/2parcial-ayso:v1.0
+  112  docker build -t nahuelbarneto/2parcial-ayso:v1.0 .
+  113  docker image list
+  114  docker push nahuelbarneto/2parcial-ayso:v1.0
+  115  docker run -d -p 8080:80 nahuelbarneto/2parcial-ayso:v1.0
+  116  docker container ls
+  117  cd appHomeBanking/
+  118  sudo vim index.html
+  119  docker stop 8cbf110e79d4e182b73fd372e3fb9e8eb6e126efe6a1e065c04cfe009bac4b4a
+  120  docker container ls
+  121  docker push nahuelbarneto/2parcial-ayso:v1.0
+  122  cd ..
+  123  ll
+  124  cd ..
+  125  cd 2doParcial/
+  126  ll
+  127  vim puntoc.sh
+  128  sudo vim puntoc.sh
+  129  history
+   126  ll
+  127  vim puntoc.sh
+  128  sudo vim puntoc.sh
+  129  history
+  130  ssh-keygen -t rsa -C "tu_email@example.com"
+  131  cat ~/.ssh/rsa.pub
+  132  cat ~/.ssh/id_rsa.pub
+  133  ssh-keygen -t rsa2 -C "nahuelbarneto@gmail.com"
+  134  ssh-keygen -t rsa -C "nahuelbarneto@gmail.com"
+  135  cat ~/.ssh/id_rsa.pub
+  136  ssh-keygen -t rsa -C "nahuelbarneto@gmail.com"
+  137  cat ~/.ssh/id_rsa.pub
+  138  ssh -T git@github.com
+  139  git config --global user.name "NahuelBarneto3"
+  140  git config --global user.email "nahuelbarneto@gmail.com"
+  141  git config --list
+  142  git remote -v
+  143  git add .
+  144  git init
+  145  sudo git init
+  146  git add .
+  147  git commit -m "primer commit 2do parcial"
+  148  git config --global --add safe.directory /home/2doParcial
+  149  git add .
+  150  sudo git add .
+  151  sudo git commit -m "primer commit 2do parcial"
+  152  git remote add origin git@github.com:NahuelBarneto3/AySO-2doParcial-NahuelBarneto.git
+  153  sudo git remote add origin git@github.com:NahuelBarneto3/AySO-2doParcial-NahuelBarneto.git
+  154  git push -u origin main
+  155  git log
+  156  git branch -M main
+  157  sudo git branch -M main
+  158  sudo git branch
+  159  git push -u origin main
+  160  cat ~/.ssh/id_rsa.pub
+  161  git push -u origin main
+  162  ssh -T git@github.com
+  163  git pull origin main
+  164  sudo git pull origin main
+  165  ll
+  166  git status
+  167  git add .
+  168  sudo git add .
+  169  sudo git commit -m "primer commit 2do parcial"
+  170  git status
+  171  ll
+  172  touch a.sh
+  173  sudo touch a.sh
+  174  ll
+  175  sudo git add .
+  176  sudo git commit -m "primer commit 2do parcial"
+  177  git push -u origin main
+  178  git pull
+  179  git pull origin main
+  180  sudo git pull origin main
+  181  sudo chown -R $USER:$USER .git
+  182  git pull origin main
+  183  git push -u origin main
+  184  https://github.com/NahuelBarneto3/AySO-2doParcial-NahuelBarneto.git
+  185  git remote add origin https://github.com/NahuelBarneto3/AySO-2doParcial-NahuelBarneto.git
+  186  git branch -M main
+  187  git push -u origin main
+  188  cat ~/.ssh/id_rsa.pub
+  189  ssh-keygen -t rsa -C "nahuelbarneto@gmail.com"
+  190  cat ~/.ssh/id_rsa.pub
+  191  git remote add origin https://github.com/NahuelBarneto3/AySO-2doParcial-NahuelBarneto.git
+  192  git branch -M main
+  193  git push -u origin main
+  194  git status
+  195  git add README.md
+  196  history
+
+
+
